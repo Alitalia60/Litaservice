@@ -1,0 +1,48 @@
+.nav_wrapper {
+  font-size: 0.8em;
+  margin: 5px;
+  // line-height: 0.5em;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  justify-content: end;
+}
+
+.nav_item {
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.nav_item>a {
+  color: white;
+}
+
+.nav_item:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+
+}
+
+.nav_item>a:hover {
+  color: aqua;
+  transform: scale(.5);
+  transition: 0.3s;
+  text-decoration: underline;
+
+}
+
+.nav_item>a.active_link {
+  color: aqua;
+  text-decoration: underline;
+}
+
+.home_icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("/src/assets/home.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

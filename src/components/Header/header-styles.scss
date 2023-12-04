@@ -1,0 +1,55 @@
+// @import '../../scss/general.scss';
+
+.header_wrapper {
+  height: 10vh;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 3px 0.5em;
+}
+
+.header_logo {
+  width: 350px;
+  height: 80px;
+  border: 3px rgb(112, 8, 112) solid;
+  border-radius: 50%;
+  position: relative;
+}
+
+.header_logo_inner {
+  position: absolute;
+  top: 7px;
+  left: 9px;
+  width: 330px;
+  height: 65px;
+  background-color: rgb(112, 8, 112);
+  border-radius: 50%;
+}
+
+.header_name {
+  font-size: 3.8em;
+  position: absolute;
+  top: -13px;
+  font-family: "popularScript";
+  left: -11px;
+}
+
+.header_subname {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.theme_button {
+  width: 30px;
+  height: 30px;
+  background-image: url('../../assets/brightness.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
