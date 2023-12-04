@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 
 const Header = () => {
-  const [dark, setTheme] = useState(true);
+  const [isDarkMode, setTheme] = useState(true);
   return (
     <>
       <div className="header_wrapper">
@@ -14,9 +14,17 @@ const Header = () => {
           </div>
         </div>
         <div className='theme_button' onClick={() => {
-          setTheme(!dark);
-          const root = document.querySelector(":root");
-          root.classList.toggle('light')
+          setTheme(!isDarkMode);
+          const root = document.querySelector(':root');
+          // body.toggleAttribute('light-mode');
+          if (isDarkMode) {
+            document.documentElement.style.setProperty('--bgcolor', 'rgba(15, 15, 15, 0.87)');
+            document.documentElement.style.setProperty('--color', 'rgba(241, 241, 241, 0.87)');
+          }
+          else {
+            document.documentElement.style.setProperty('--bgcolor', 'rgba(241, 241, 241, 0.87)');
+            document.documentElement.style.setProperty('--color', 'rgba(15, 15, 15, 0.87)');
+          }
         }
         }>
         </div>

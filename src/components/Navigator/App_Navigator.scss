@@ -1,3 +1,5 @@
+@import '../../scss/general.scss';
+
 .nav_wrapper {
   font-size: 0.8em;
   margin: 5px;
@@ -12,28 +14,22 @@
 .nav_item {
   text-align: center;
   flex-shrink: 0;
+  color: red;
 }
 
 .nav_item>a {
-  color: white;
+  color: $txt-color;
 }
 
 .nav_item:hover {
+  transition: 0.3s;
   transform: scale(1.1);
-  transition: 0.3s;
-
-}
-
-.nav_item>a:hover {
-  color: aqua;
-  transform: scale(.5);
-  transition: 0.3s;
   text-decoration: underline;
 
 }
 
-.nav_item>a.active_link {
-  color: aqua;
+.nav_item.active>a {
+  color: $btn-color-hover;
   text-decoration: underline;
 }
 

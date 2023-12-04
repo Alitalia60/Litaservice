@@ -1,7 +1,9 @@
+@import '../../scss/general.scss';
+
 .menu_item {
   width: 10em;
   height: 100px;
-  border: 3px double rgb(199, 186, 186);
+  border: 3px double $txt-color;
   background-color: rgba(25, 25, 25, 1);
   border-radius: 10px;
   cursor: pointer;
@@ -14,13 +16,13 @@
   font-size: 1.1em;
 
   &:hover {
-    // outline: 2px gray solid;
+    color: $btn-color-hover;
     transform: scale3d(1.05, 1.05, 1);
     transition: 0.3s;
-    color: aqua;
   }
 
-  &>h3 {
-    padding: 10px;
+  &:hover>a>h4 {
+    color: $btn-color-hover;
   }
+
 }
