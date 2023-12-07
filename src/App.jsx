@@ -13,14 +13,22 @@ import Goods_Kanc from './pages/Goods_Kanc/Goods_Kanc';
 import Goods_TO from './pages/Goods_TO copy/Goods_TO';
 import App_Navigator from './components/Navigator/App_Navigator';
 import About from './components/About/About';
+import { useState } from 'react';
 
 
 function App() {
-  window.addEventListener('load', () => console.log('on load 2'));
+  // window.addEventListener('load', () => console.log('on load 2'));
+  const [currentPage, setCurrentPage] = useState('/');
+
+  const changePage = (event) => {
+    console.log('setCurentPage', event);
+    setCurrentPage(newPage)
+  }
   return (
     <>
       <div className="app_wrapper">
-        <Header />
+        <Header changePage={setCurrentPage} />
+        {/* <App_Navigator className='app_navigation' currentPage={currentPage} changePage={changePage} /> */}
         <App_Navigator className='app_navigation' />
         <div className="content_wrapper">
           <Routes>

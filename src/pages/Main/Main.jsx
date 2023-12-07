@@ -3,10 +3,10 @@ import './Main.scss';
 import MenuItem from '../../components/Menu_item/Menu-item';
 
 
-const Main = () => {
+const Main = ({ setCurrentPage }) => {
   return (
     <div className='main_wrapper'>
-      <MenuItem title="Печатные услуги" goto='service_copy' />
+      <MenuItem title="Печатные услуги" goto='service_copy' setCurrentPage={setCurrentPage} />
       <MenuItem title="Программные услуги" goto='service_pc' />
       <MenuItem title="Техобслуживание оргтехники" goto='service_print' />
       <MenuItem title="WEB верстка" goto='service_web' />

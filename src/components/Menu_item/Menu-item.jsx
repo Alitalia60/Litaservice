@@ -2,15 +2,10 @@ import { Link } from 'react-router-dom'
 import './Menu_item_styles.scss'
 
 
-const MenuItem = ({ goto, title }) => {
-  const setActiveLink = (event) => {
-    console.log(event.target);
-    if (event.target) {
-    }
-  }
+const MenuItem = ({ goto, title, setCurrentPage }) => {
 
   return (
-    <div className='menu_item' onClick={setActiveLink}>
+    <div className='menu_item' onClick={setCurrentPage}>
       <Link to={goto}>
         <h4>{title}</h4>
       </Link>
