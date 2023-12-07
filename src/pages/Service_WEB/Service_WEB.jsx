@@ -2,10 +2,10 @@ import React from 'react'
 import './Service_WEB.scss';
 
 
-const Service_WEB = () => {
+const Service_WEB = ({ title }) => {
   return (
     <div className='page_wrapper'>
-      <h2>WEB верстка</h2>
+      <h2>{title}</h2>
       <ul>
 
       </ul>

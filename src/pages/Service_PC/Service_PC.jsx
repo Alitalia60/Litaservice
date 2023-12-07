@@ -1,10 +1,10 @@
 import './Service_PC.scss';
 
 
-const Service_PC = () => {
+const Service_PC = ({ title }) => {
   return (
     <div className='page_wrapper'>
-      <h2>Программные услуги для персональных компьютеров</h2>
+      <h2>{title}</h2>
       <ul>
         <li>Установка, настройка программ общего назначения</li>
         <li>Установка, настройка сертификатов ключей банков, ГосУОК</li>

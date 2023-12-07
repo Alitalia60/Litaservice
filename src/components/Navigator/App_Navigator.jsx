@@ -1,42 +1,30 @@
 import { Link } from 'react-router-dom'
 import './App_Navigator.scss';
 import { useState } from 'react';
+import Main from '../../pages/Main/Main';
+import Service_Print from '../../pages/Service_Print/Service_Print';
+import Service_Copy from '../../pages/Service_Copy/Service_Copy';
+import Service_PC from '../../pages/Service_PC/Service_PC';
+import Service_WEB from '../../pages/Service_WEB/Service_WEB';
+import Goods_Kanc from '../../pages/Goods_Kanc/Goods_Kanc';
+import Goods_PC from '../../pages/Goods_PC/Goods_PC';
+import Goods_TO from '../../pages/Goods_TO copy/Goods_TO';
+import About from '../About/About';
 
-const App_Navigator = () => {
+import { itemsList } from '../../App'
 
-  const itemsList = [
-    { linkTo: '/', linkImg: '', },
-    { linkTo: '/service_copy', linkImg: '', },
-    { linkTo: '/service_pc', linkImg: '', },
-    { linkTo: '/service_print', linkImg: '', },
-    { linkTo: '/service_web', linkImg: '', },
-    { linkTo: '/goods_kanc', linkImg: '', },
-    { linkTo: '/goods_pc', linkImg: '', },
-    { linkTo: '/goods_rasx', linkImg: '', },
-    { linkTo: '/about_us', linkImg: '', },
-  ]
-
-  const [activeLink, setActiveLink] = useState('/');
-
-  const setActveItem = (_link) => {
-    setActiveLink(_link)
-  }
+const App_Navigator = ({ setCurrentPage }) => {
 
   return (
-    <ul className='nav_wrapper' onClick={setCurrentPage}>
-      <li className='nav_item'>
-        <Link to='/'>           <div className="home_icon">           </div>
-        </Link>
-      </li>
-      <li className='nav_item'><Link to='/service_copy' >Печать, копии</Link>   </li>
-      <li className='nav_item'> <Link to='/service_pc' >Программные услуги</Link></li>
-      <li className='nav_item'><Link to='/service_print'>Ремонт, техобслуживание</Link>      </li>
-      <li className='nav_item'> <Link to='/service_web'>WEB - верстка</Link></li>
-      <li className='nav_item'> <Link to='/goods_kanc' >Канцтовары</Link></li>
-      <li className='nav_item'> <Link to='/goods_pc' >Компьютерные аксессуары</Link></li>
-      <li className='nav_item'> <Link to='/goods_rasx' >Расходники</Link></li>
-      <li className='nav_item'> <Link to='/about_us' >О нас</Link></li>
-    </ul>
+    <>
+      <ul className='nav_wrapper' onClick={setCurrentPage}>
+        {itemsList.map((item, index) => {
+          return (<li key={index} className='nav_item'>
+            <Link to={item.linkTo}> {item.title} </Link>
+          </li>)
+        })}
+      </ul>
+    </>
 
   )
 }

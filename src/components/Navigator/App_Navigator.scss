@@ -28,7 +28,11 @@
 
 }
 
-.nav_item.active>a {
+.nav_item.active_link {
+  color: $btn-color-hover;
+}
+
+.nav_item.active_link>a {
   color: $btn-color-hover;
   text-decoration: underline;
 }
