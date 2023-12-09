@@ -6,11 +6,19 @@ const Service_Copy = ({ title }) => {
   return (
     <div className='page_wrapper'>
       <h2>{title}</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, alias dignissimos! Optio blanditiis assumenda consectetur iure laudantium inventore alias, magnam officia perspiciatis delectus vero sequi, sit quia nam aspernatur deserunt!</p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, alias dignissimos! Optio blanditiis assumenda consectetur iure laudantium inventore alias, magnam officia perspiciatis delectus vero sequi, sit quia nam aspernatur deserunt!</p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, alias dignissimos! Optio blanditiis assumenda consectetur iure laudantium inventore alias, magnam officia perspiciatis delectus vero sequi, sit quia nam aspernatur deserunt!</p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, alias dignissimos! Optio blanditiis assumenda consectetur iure laudantium inventore alias, magnam officia perspiciatis delectus vero sequi, sit quia nam aspernatur deserunt!</p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, alias dignissimos! Optio blanditiis assumenda consectetur iure laudantium inventore alias, magnam officia perspiciatis delectus vero sequi, sit quia nam aspernatur deserunt!</p>
+      <ul>
+        <li>Ксерокопия</li>
+        <li>Набор и редактирование текстов</li>
+        <li>Печать текстов</li>
+        <li>Печать фотографий</li>
+        <li>Печать информации из интернета</li>
+        <li>Печать из вайбера, электронной почты</li>
+        <li>Сканирование документов</li>
+
+        <li>Ламинирование</li>
+      </ul>
+      <p>Максимальный формат черно-белой печати - А3</p>
+      <p>Максимальный формат цветной печати - А4</p>
     </div>
 
   )

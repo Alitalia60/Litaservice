@@ -6,11 +6,11 @@ const Service_Print = ({ title }) => {
   return (
     <div className='page_wrapper'>
       <h2>{title}</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, alias dignissimos! Optio blanditiis assumenda consectetur iure laudantium inventore alias, magnam officia perspiciatis delectus vero sequi, sit quia nam aspernatur deserunt!</p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, alias dignissimos! Optio blanditiis assumenda consectetur iure laudantium inventore alias, magnam officia perspiciatis delectus vero sequi, sit quia nam aspernatur deserunt!</p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, alias dignissimos! Optio blanditiis assumenda consectetur iure laudantium inventore alias, magnam officia perspiciatis delectus vero sequi, sit quia nam aspernatur deserunt!</p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, alias dignissimos! Optio blanditiis assumenda consectetur iure laudantium inventore alias, magnam officia perspiciatis delectus vero sequi, sit quia nam aspernatur deserunt!</p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, alias dignissimos! Optio blanditiis assumenda consectetur iure laudantium inventore alias, magnam officia perspiciatis delectus vero sequi, sit quia nam aspernatur deserunt!</p>
+      <ul>
+        <li>Ремонт компьютеров, ноутбуков</li>
+        <li>Ремонт лазерных принтеров, МФУ</li>
+        <li>Ремонт и заправка картриджей</li>
+      </ul>
     </div>
   )
 }
